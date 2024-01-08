@@ -1,0 +1,308 @@
+/* inter-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v13-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v13-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v13-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-800 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/inter-v13-cyrillic_latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+body {
+  // ТОЛЬКО типографика!
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  word-break: break-word;
+  text-align: left;
+  text-decoration-skip-ink: auto;
+  color: $text-color;
+  //background-color: $body-bg;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // text-rendering: optimizeLegibility;
+  // Partial support in Android browser versions is due to a serious bug where text-rendering: optimizeLegibility causes custom web fonts to not render!!!
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family--headings;
+  line-height: 1.2;
+  color: $title-color;
+}
+
+.h2,
+.h3,
+h2,
+h3 {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.h4,
+.h5,
+.h6,
+h4,
+h5,
+h6 {
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+
+.h1,
+h1 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: $font-size--h1;
+  font-weight: 800;
+}
+
+.h2,
+h2 {
+  font-size: $font-size--h2;
+}
+
+.h3,
+h3 {
+  font-size: $font-size--h3;
+}
+
+.h4,
+h4 {
+  font-size: $font-size--h4;
+}
+
+.h5,
+h5 {
+  font-size: $font-size--h5;
+}
+
+.h6,
+h6 {
+  font-size: $font-size--h6;
+}
+
+.p,
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+address,
+figure {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: $text-color;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+p {
+  // http://clagnut.com/blog/2395
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+  hyphenate-limit-lines: 2;
+  hyphenate-limit-last: always;
+  hyphenate-limit-zone: 8%;
+}
+
+address {
+  font-style: normal;
+}
+
+ul,
+ol {
+  padding-left: 1.3em;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+li {
+  line-height: inherit;
+}
+
+hr {
+  box-sizing: content-box; // Проблема Firefox
+  height: 0;               // Проблема Firefox
+  overflow: visible;       // Проблема Edge и IE
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 0;
+  border-top: 1px solid $border-color;
+}
+
+.small,
+small {
+  font-size: $font-size * 0.75;
+}
+
+sub,
+sup {
+  font-size: 70%;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+blockquote {
+  position: relative;
+  padding: 64px 24px 24px;
+  margin: 16px 0;
+  font-size: inherit;
+  color: $title-color;
+  background-color: $block-bg;
+  border-radius: $border-radius;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: svg-load('../blocks/sprite-svg/svg/quote.svg', fill=$title-color);
+  }
+
+  p {
+
+    &:last-child:not(:first-child) {
+      font-weight: 700;
+    }
+  }
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-left: 0;
+
+  @media (min-width: $screen-sm) {
+    margin-left: 1.5rem;
+  }
+
+  & + dt {
+    margin-top: 0.5em;
+  }
+}
+
+// samp,
+code,
+kbd,
+pre {
+  font-family: $font-family--monospace;
+}
+
+code {
+  padding: 0.06em 0.3em;
+  color: $text-color;
+  background-color: rgba(#000, 0.08);
+  border-radius: $border-radius;
+}
+
+kbd {
+  padding: 0.06em 0.3em;
+  color: $text-color;
+  background-color: $gray-100;
+  border-radius: $border-radius;
+
+  kbd {
+    padding: 0;
+  }
+}
+
+pre {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5em;
+  overflow-x: auto;
+  tab-size: 2;
+  background-color: rgba(#000, 0.08);
+
+  code {
+    background: transparent;
+  }
+}
+
+// Вложенные упорядоченные списки: 1, 2, 3, 3.1 -> 3.1.1, 3.1.2…
+// ol {
+//   list-style: none;
+//   counter-reset: something;
+//   padding-left: 32px;
+
+//   li {
+//     counter-increment: something;
+
+//     &::before {
+//       content: counters(something, ".") ". ";
+//     }
+//   }
+// }
+
+a {
+  text-decoration-skip-ink: inherit;
+}

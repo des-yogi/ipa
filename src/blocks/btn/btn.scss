@@ -1,0 +1,72 @@
+.btn {
+
+  $block-name:                &; // #{$block-name}__element
+
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 56px;
+  padding: $field-padding-vertical $field-padding-horizontal;
+  font-family: inherit;
+  font-size: $font-size;
+  font-weight: 500;
+  line-height: $line-height;
+  text-decoration: none;
+  text-transform: none;
+  white-space: nowrap;
+  color: $white;
+  background-color: $main-color;
+  border-radius: $border-radius;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  transition: background $transition-time;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-color: $blue-700;
+    color: $white;
+    // border-color: darken($gray-lighter, 12%);
+  }
+
+  &:active {
+    background-color: $blue-800;
+    // @include field-focus;
+  }
+
+  &--disabled,
+  &:disabled {
+    // opacity: $opacity;
+    cursor: not-allowed;
+    color: $text-muted;
+    background-color: $gray-100;
+    //border-color: $gray-lighter;
+
+    @at-root a.btn--disabled {
+      pointer-events: none;
+    }
+  }
+
+
+  &--icon {
+    min-height: 44px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+
+    // &:hover,
+    // &:focus {
+
+    // }
+
+    //&--disabled,
+    //&:disabled {
+      //color: #fff;
+      //background-color: $color-main;
+      //border-color: $color-main;
+    //}
+  }
+}

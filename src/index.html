@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home page</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main role="main">
+
+        @@include('blocks/hero/hero.html')
+
+        <section class="container  section">
+          @@include('blocks/section-header/section-header.html', {
+            "tag": "h1",
+            "text": "Публікації"
+          })
+
+          <div class="row  card-wrapper">
+
+            <div class="col-1-2-4">
+              @@include('blocks/media-card/media-card.html', {
+                "img": "media-card-img-1",
+                "title": "Відзначаємо знаменну дату",
+                "text": "90-річчя Президента Української секції МПА генерала внутрішньої служби України Андрія Володимировича Василишина.служби України",
+                "hiddenClass": "d-none",
+                "address": "м. Київ, вул. Інститутська, 103"
+              })
+            </div>
+
+            <div class="col-1-2-4">
+              @@include('blocks/media-card/media-card.html', {
+                "img": "media-card-img-2",
+                "title": "Відзначаємо знаменну дату",
+                "text": "90-річчя Президента Української секції МПА",
+                "hiddenClass": "d-none",
+                "address": "м. Київ, вул. Інститутська, 103"
+              })
+            </div>
+
+            <div class="col-1-2-4">
+              @@include('blocks/media-card/media-card.html', {
+                "img": "media-card-img-3",
+                "title": "Відзначаємо знаменну дату",
+                "text": "90-річчя Президента Української секції МПА генерала внутрішньої служби України Андрія Володимировича Василишина.служби України",
+                "hiddenClass": "d-none",
+                "address": "м. Київ, вул. Інститутська, 103"
+              })
+            </div>
+
+            <div class="col-1-2-4">
+              @@include('blocks/media-card/media-card.html', {
+                "img": "media-card-img-4",
+                "title": "Відзначаємо знаменну дату",
+                "text": "90-річчя Президента Української секції МПА генерала внутрішньої служби України Андрія Володимировича Василишина.служби України",
+                "hiddenClass": "d-none",
+                "address": "м. Київ, вул. Інститутська, 103"
+              })
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

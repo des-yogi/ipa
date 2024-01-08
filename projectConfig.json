@@ -1,0 +1,87 @@
+{
+  "blocks": {
+    "accordion": [],
+    "breadcrumbs": [],
+    "btn": [],
+    "burger": [],
+    "close": [],
+    "countdown": [],
+    "embed-responsive": [],
+    "field-actions": [],
+    "field-checkbox": [],
+    "field-radio": [],
+    "field-text": [],
+    "form": [],
+    "logo": [],
+    "main-nav": [],
+    "modal": [],
+    "page": [],
+    "page-footer": [],
+    "page-header": [],
+    "sprite-svg": [],
+    "table": [],
+    "table-mobile-scroll": [],
+    "to-top": [],
+    "typo": [],
+    "hero": [],
+    "media-card": [],
+    "about-block": [],
+    "gallery-card": [],
+    "filter-list": [],
+    "section-header": [],
+    "section": []
+  },
+  "addCssBefore": [
+    "../../node_modules/bootstrap/scss/_functions",
+    "../../node_modules/bootstrap/scss/_variables",
+    "../../node_modules/bootstrap/scss/_mixins",
+    "../../node_modules/bootstrap/scss/_dropdown",
+    "../../node_modules/bootstrap/scss/_modal",
+    "../../node_modules/bootstrap/scss/_offcanvas",
+    "./src/scss/variables.scss",
+    "./src/scss/mixins.scss",
+    "../../node_modules/swiper/swiper-bundle.css",
+    "../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css"
+  ],
+  "addCssAfter": [
+    "./src/scss/print.scss"
+  ],
+  "singleCompiled": [],
+  "addJsBefore": [
+    "./node_modules/focus-visible/dist/focus-visible.min.js",
+    "./node_modules/imask/dist/imask.min.js",
+    "./node_modules/svg4everybody/dist/svg4everybody.js",
+    "./node_modules/autosize/dist/autosize.min.js",
+    "./node_modules/@popperjs/core/dist/umd/popper.min.js",
+    "./node_modules/bootstrap/js/dist/util/index.js",
+    "./node_modules/bootstrap/js/dist/dom/selector-engine.js",
+    "./node_modules/bootstrap/js/dist/dom/data.js",
+    "./node_modules/bootstrap/js/dist/dom/event-handler.js",
+    "./node_modules/bootstrap/js/dist/dom/manipulator.js",
+    "./node_modules/bootstrap/js/dist/util/scrollbar.js",
+    "./node_modules/bootstrap/js/dist/util/config.js",
+    "./node_modules/bootstrap/js/dist/base-component.js",
+    "./node_modules/bootstrap/js/dist/util/backdrop.js",
+    "./node_modules/bootstrap/js/dist/util/focustrap.js",
+    "./node_modules/bootstrap/js/dist/util/component-functions.js",
+    "./node_modules/bootstrap/js/dist/dropdown.js",
+    "./node_modules/bootstrap/js/dist/modal.js",
+    "./node_modules/bootstrap/js/dist/offcanvas.js",
+    "./node_modules/bootstrap/js/dist/collapse.js",
+    "./node_modules/swiper/swiper-bundle.min.js",
+    "./node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js"
+  ],
+  "addJsAfter": [
+    "./src/js/global-script.js"
+  ],
+  "addImages": [
+    "./src/img/*.{jpg,jpeg,gif,png,svg,ico,webp}"
+  ],
+  "copiedCss": [],
+  "copiedJs": [],
+  "dirs": {
+    "srcPath": "./src/",
+    "buildPath": "./build/",
+    "blocksDirName": "blocks"
+  }
+}

@@ -1,0 +1,50 @@
+.logo {
+
+  $block-name:                &; // #{$block-name}__element
+
+  flex: 0 1 auto;
+  display: inline-flex;
+  //flex-wrap: wrap;
+  align-items: center;
+  text-decoration: none;
+
+  img {
+    flex: 0 0 59px;
+    margin-right: 10px;
+    width: 59px;
+    height: 57px;
+
+    @media (min-width: $screen-md) {
+      flex: 0 0 62px;
+      width: 62px;
+      height: 60px;
+    }
+  }
+
+  span {
+    flex: 0 1 auto;
+    font-size: $font-size-sm;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.45;
+    color: $title-color;
+
+    @media (min-width: $screen-md) {
+      font-size: $font-size-lg;
+    }
+  }
+
+  &--footer {
+
+    img {
+      flex: 0 0 62px;
+      width: 62px;
+      height: 60px;
+    }
+
+    span {
+      flex: 1 1 auto;
+      color: $white;
+    }
+  }
+}

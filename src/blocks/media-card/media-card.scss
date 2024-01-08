@@ -1,0 +1,86 @@
+.media-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__img {
+    flex: 0 0 auto;
+    border-radius: $border-radius-lg;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    padding-bottom: 20px;
+  }
+
+  &__title {
+    margin-top: 0;
+    font-size: $font-size-lg;
+    font-weight: 500;
+    text-transform: none;
+
+    a {
+      text-decoration: none;
+
+      &::after,
+      &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        z-index: 0;
+      }
+
+      &::after {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-bottom: 3px solid $border-color;
+        //pointer-events: none;
+      }
+
+      &::before {
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        height: 3px;
+        width: 0;
+        background-color: $main-color;
+        transition: width $transition-time;
+      }
+
+      &:hover,
+      &:focus {
+
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__descr {
+    margin-top: 0;
+    font-size: $font-size-sm;
+  }
+
+  &__footer {
+    margin-top: auto;
+    color: $title-color;
+
+    & > * {
+      color: inherit;
+    }
+  }
+}

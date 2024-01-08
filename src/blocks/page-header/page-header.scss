@@ -1,0 +1,39 @@
+.page-header {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $main-color;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    display: flex;
+    //flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    @media (min-width: $menu-desktop-width) {
+      gap: 24px;
+    }
+  }
+
+  &__controls {
+    flex: 0 0 104px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @media (min-width: $menu-desktop-width) {
+      flex: 0 0 auto;
+      order: 1;
+    }
+  }
+
+  &__burger {
+
+    @media (min-width: $menu-desktop-width) {
+      display: none;
+    }
+  }
+}
