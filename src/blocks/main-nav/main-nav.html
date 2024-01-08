@@ -1,0 +1,56 @@
+<!--DEV
+@ @include('blocks/main-nav/main-nav.html')
+  <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+-->
+
+<nav id="main-nav" class="main-nav  offcanvas offcanvas-top" tabindex="-1" aria-labelledby="main-nav-lbl">
+  <span class="visually-hidden" id="main-nav-lbl">Основне меню</span>
+
+  <div class="main-nav__header">
+    @@include('../../blocks/logo/logo.html', {
+      'addClass': ''
+    })
+    <button class="btn  btn--icon" data-bs-dismiss="offcanvas" aria-label="Закрити Меню">
+      <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#close"></use></svg>
+      <span class="visually-hidden">Закрити меню</span>
+    </button>
+  </div>
+
+  <ul class="main-nav__list  offcanvas-body">
+    <li class="main-nav__item  active">
+      <a href="#" class="main-nav__link">
+        <span>Публікації</span>
+      </a>
+     </li>
+    <li class="main-nav__item">
+      <a href="#" class="main-nav__link">
+        <span>Заходи</span>
+      </a>
+    </li>
+    <li class="main-nav__item">
+      <a href="#" class="main-nav__link">
+        <span>Про нас</span>
+      </a>
+    </li>
+    <li class="main-nav__item">
+      <a href="#" class="main-nav__link">
+        <span>Медіа</span>
+      </a>
+    </li>
+    <li class="main-nav__item">
+      <a href="#" class="main-nav__link">
+        <span>Документи</span>
+      </a>
+    </li>
+    <li class="main-nav__item">
+      <a href="#" class="main-nav__link">
+        <span>Членство в МПА</span>
+      </a>
+    </li>
+    <li class="main-nav__item">
+      <a href="#" class="main-nav__link">
+        <span>Контакти</span>
+      </a>
+    </li>
+  </ul>
+</nav>

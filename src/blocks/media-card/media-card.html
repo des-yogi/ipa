@@ -1,0 +1,32 @@
+<!--DEV
+@ @include('blocks/media-card/media-card.html', {
+  "img": "",
+  "title": "Відзначаємо знаменну дату",
+  "text": "90-річчя Президента Української секції МПА генерала внутрішньої служби України Андрія Володимировича Василишина.служби України",
+  "hiddenClass": "visually-hidden",
+  "address": "м. Київ, вул. Інститутська, 103"
+})
+-->
+
+<article class="media-card">
+  <div class="embed-responsive embed-responsive--4-3  media-card__img">
+    <picture>
+      <source srcset="img/@@img.webp" media="(min-width: 320px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 320px)">
+      <img src="img/@@img.jpg" alt="Caption" width="" height="" loading="lazy">
+    </picture>
+  </div>
+  <div class="media-card__text">
+    <h3 class="media-card__title">
+      <a href="#">@@title</a>
+    </h3>
+    <p class="media-card__descr">@@text</p>
+
+    <div class="media-card__footer">
+      <p class="publishedon">
+        <time datetime="2024-02-12">12.02.2024</time>
+      </p>
+      <p class="address @@hiddenClass">@@address</p>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,16 @@
+.section-header {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    margin-top: 0;
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    border-bottom: 2px solid $main-color;
+  }
+
+  // h1 {
+  //    margin-bottom: 48px !important;
+  // }
+}

@@ -1,0 +1,27 @@
+.hero {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: $secondary-color;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+
+  @media (min-width: $screen-md) {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__slide {
+    color: $white;
+  }
+
+  &__slide-title {
+    max-width: 588px;
+    margin-bottom: 40px;
+    text-transform: none;
+    line-height: 1.3;
+    color: inherit;
+  }
+}

@@ -1,0 +1,29 @@
+<!--DEV
+
+Нужно убрать пробел между @-ами:
+
+@ @include('blocks/page-header/page-header.html')
+
+-->
+
+<header class="page-header">
+  <div class="container  page-header__inner">
+    @@include('../../blocks/logo/logo.html', {
+      'addClass': ''
+    })
+
+    <div class="page-header__controls">
+      <button class="btn  btn--icon">
+        <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#search"></use></svg>
+        <span class="visually-hidden">Пошук по сайту</span>
+      </button>
+
+      <button class="btn  btn--icon  page-header__burger" data-bs-toggle="offcanvas" data-bs-target="#main-nav" aria-controls="main-nav">
+        <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#menu"></use></svg>
+        <span class="visually-hidden">Перемикач меню</span>
+      </button>
+    </div>
+
+    @@include('../../blocks/main-nav/main-nav.html')
+  </div>
+</header>

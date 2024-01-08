@@ -1,0 +1,129 @@
+.main-nav {
+  height: auto !important;
+  padding: 24px 12px;
+  background-color: $body-bg;
+
+  @media (min-width: $screen-sm) {
+    padding: 24px 16px;
+  }
+
+  @media (min-width: $screen-md) {
+    padding: 24px 40px;
+  }
+
+  @media (min-width: $menu-desktop-width) {
+    visibility: visible;
+    flex-direction: initial;
+    align-items: baseline;
+    position: static;
+    transform: none !important;
+    z-index: 0;
+    padding: 0;
+    margin-left: auto;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 24px;
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: -12px;
+      right: -12px;
+      bottom: 0;
+      height: 1px;
+      background-color: $main-color;
+
+      @media (min-width: $screen-sm) {
+        left: -16px;
+        right: -16px;
+      }
+
+      @media (min-width: $screen-md) {
+        left: -40px;
+        right: -40px;
+      }
+    }
+
+    @media (min-width: $menu-desktop-width) {
+      display: none;
+    }
+  }
+
+  &__list {
+    margin: 22px 0 0;
+    padding: 0;
+    list-style: none;
+
+    // настольный вид списка
+    @media (min-width: $menu-desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 0;
+    }
+  }
+
+  &__item {
+
+    & + & {
+
+      @media (max-width: ($menu-desktop-width - 1)) {
+        margin-top: 8px;
+      }
+
+      @media (min-width: $menu-desktop-width) {
+        margin-left: 6px;
+      }
+    }
+
+    &.active {
+
+      #{$block-name}__link span {
+        position: relative;
+
+        &::after {
+          display: block;
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -6px;
+          height: 2px;
+          background-color: $main-color;
+        }
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 9px 12px 9px 0;
+    font-weight: 500;
+    text-decoration: none;
+    color: $title-color;
+    //background-color: #fff;
+
+    @media (min-width: $screen-md) {
+      display: inline-flex;
+      align-items: center;
+      padding-right: 24px;
+    }
+
+    @media (min-width: $menu-desktop-width) {
+      padding: 9px 12px;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      //background-color: aquamarine;
+    }
+  }
+}
