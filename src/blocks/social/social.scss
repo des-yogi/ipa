@@ -1,0 +1,48 @@
+.social {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    margin: 0 0 8px;
+    font-size: $font-size;
+    text-transform: none;
+    line-height: 1.6;
+  }
+
+  &__list {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4px 0;
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 0;
+    color: $white;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      text-decoration: underline;
+    }
+
+    span {
+      font-size: $font-size-sm;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+
+      & + span {
+        margin-left: 8px;
+      }
+    }
+  }
+}

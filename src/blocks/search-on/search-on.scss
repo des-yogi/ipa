@@ -1,0 +1,28 @@
+.search-on {
+  height: 220px !important;
+  background-color: $body-bg;
+
+  $block-name:                &; // #{$block-name}__element
+
+  .container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    @media (min-width: $screen-md) {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 0 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid $main-color;
+  }
+
+  &__body {
+    padding: 0;
+  }
+}

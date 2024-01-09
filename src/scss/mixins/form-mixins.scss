@@ -3,14 +3,14 @@
   vertical-align: middle;
   width: 100%;
   min-height: calc(#{$line-height}em + #{$field-padding-vertical} + #{$field-padding-vertical} + 2px); // Привет, IE
+  padding: $field-padding-vertical  $field-padding-horizontal;
   margin: 0;
+  font-size: $font-size;
+  font-family: inherit;
+  line-height: $line-height;
+  background-color: $body-bg;
   border: 1px solid $border-color;
   border-radius: $border-radius;
-  padding: $field-padding-vertical  $field-padding-horizontal;
-  line-height: $line-height;
-  font-size: 1em;
-  font-family: inherit;
-  background-color: #fff;
   -moz-appearance: textfield; // stylelint-disable-line
   appearance: textfield;
 
@@ -47,7 +47,7 @@
   padding-top: 0.4em;
   font-size: $font-size-sm;
   line-height: 1.2em;
-  color: $text-muted;
+  color: $color-danger;
 
   &:empty { // stylelint-disable-line
     display: none;
@@ -57,7 +57,7 @@
 
 @mixin field-focus {
   outline: 0;
-  box-shadow: 0 0 0 2px rgba($color-main, $opacity);
+  box-shadow: 0 0 0 1px $color-main inset;
 }
 
 

@@ -1,11 +1,49 @@
 <!--DEV
-
-Нужно убрать пробел между @-ами:
-
 @ @include('blocks/page-footer/page-footer.html')
-
 -->
 
-<footer class="page-footer" role="contentinfo">
-  page-footer
+<footer class="container  page-footer">
+  <div class="row  page-footer__inner">
+
+    <div class="page-footer__logo-col">
+      @@include('../../blocks/logo/logo.html', {
+        'addClass': 'logo--footer'
+      })
+    </div>
+
+    <div class="page-footer__menu-col">
+      <nav class="page-footer__nav">
+        <ul class="list-nostyled  page-footer__nav-list">
+          <li class="page-footer__nav-item  active">
+            <a class="page-footer__nav-link">Публікації</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">Заходи</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">Про нас</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">Медіа</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">Документи</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">Членство в МПА</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="page-footer__social-col">
+      @@include('../../blocks/social/social.html')
+    </div>
+
+  </div>
+
+  @@include('../../blocks/copyrights/copyrights.html')
 </footer>

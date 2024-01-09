@@ -1,9 +1,54 @@
-// В этом файле должны быть стили для БЭМ-блока about-block, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .about-block {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__inner {
+    gap: 24px 0;
+
+    @media (min-width: $screen-md) {
+      gap: 48px 0;
+    }
+  }
+
+  &__img-col {
+    @include col(xs, 12);
+    @include col-offset(md, 2);
+    @include col(md, 8);
+    @include col-offset(xl, 0);
+    @include col(xl, 5);
+
+    @media (min-width: $screen-xl) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__text-col {
+    @include col(xs, 12);
+    @include col(md, 12);
+    @include col-offset(xl, 1);
+    @include col(xl, 6);
+  }
+
+  &__img {
+    border-radius: $border-radius-lg;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    font-size: $font-size-lg;
+
+    p + p {
+      margin-top: 0;
+    }
+  }
 }

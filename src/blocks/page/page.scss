@@ -420,8 +420,13 @@ a {
 .col-1-2-4 {
   @include col(xs, 12);
   @include col(md, 6);
-  @include col(lg, 4);
+  //@include col(lg, 6);
   @include col(xl, 3);
+}
+
+.col-1-2 { // banner
+  @include col(xs, 12);
+  @include col(md, 6);
 }
 
 // background-image: svg-load('../blocks/phones-modal/bg-img/phone.svg', fill=$main-color);

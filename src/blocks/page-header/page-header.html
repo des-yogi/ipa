@@ -1,9 +1,5 @@
 <!--DEV
-
-Нужно убрать пробел между @-ами:
-
 @ @include('blocks/page-header/page-header.html')
-
 -->
 
 <header class="page-header">
@@ -13,7 +9,7 @@
     })
 
     <div class="page-header__controls">
-      <button class="btn  btn--icon">
+      <button class="btn  btn--icon" data-bs-toggle="offcanvas" data-bs-target="#search-on" aria-controls="search-on">
         <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#search"></use></svg>
         <span class="visually-hidden">Пошук по сайту</span>
       </button>

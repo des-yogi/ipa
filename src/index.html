@@ -15,13 +15,13 @@
     <div class="page__content">
       @@include('blocks/page-header/page-header.html')
 
-      <main role="main">
+      <main>
 
         @@include('blocks/hero/hero.html')
 
         <section class="container  section">
           @@include('blocks/section-header/section-header.html', {
-            "tag": "h1",
+            "tag": "h2",
             "text": "Публікації"
           })
 
@@ -68,6 +68,153 @@
             </div>
 
           </div>
+
+          <div class="section__btn-wrapper">
+            <a href="#" class="btn">
+              <span>Читати всі публікації</span>
+              <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#arrow-right"></use></svg>
+            </a>
+          </div>
+        </section>
+
+        <section class="container  section">
+          @@include('blocks/section-header/section-header.html', {
+            "tag": "h2",
+            "text": "Найближчі заходи"
+          })
+
+          <div class="row  card-wrapper">
+
+            <div class="col-1-2-4">
+              @@include('blocks/media-card/media-card.html', {
+                "img": "media-card-img-1",
+                "title": "Відзначаємо знаменну дату",
+                "text": "90-річчя Президента Української секції МПА генерала внутрішньої служби України Андрія Володимировича Василишина.служби України",
+                "hiddenClass": "",
+                "address": "м. Київ, вул. Інститутська, 103"
+              })
+            </div>
+
+            <div class="col-1-2-4">
+              @@include('blocks/media-card/media-card.html', {
+                "img": "media-card-img-2",
+                "title": "Відзначаємо знаменну дату",
+                "text": "90-річчя Президента Української секції МПА",
+                "hiddenClass": "",
+                "address": "м. Київ, вул. Інститутська, 103"
+              })
+            </div>
+
+            <div class="col-1-2-4">
+              @@include('blocks/media-card/media-card.html', {
+                "img": "media-card-img-3",
+                "title": "Відзначаємо знаменну дату",
+                "text": "90-річчя Президента Української секції МПА генерала внутрішньої служби України Андрія Володимировича Василишина.служби України",
+                "hiddenClass": "",
+                "address": "м. Київ, вул. Інститутська, 103"
+              })
+            </div>
+
+            <div class="col-1-2-4">
+              @@include('blocks/media-card/media-card.html', {
+                "img": "media-card-img-4",
+                "title": "Відзначаємо знаменну дату",
+                "text": "90-річчя Президента Української секції МПА генерала внутрішньої служби України Андрія Володимировича Василишина.служби України",
+                "hiddenClass": "",
+                "address": "м. Київ, вул. Інститутська, 103"
+              })
+            </div>
+
+          </div>
+
+          <div class="section__btn-wrapper">
+            <a href="#" class="btn">
+              <span>Дивитись всі заходи</span>
+              <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#arrow-right"></use></svg>
+            </a>
+          </div>
+        </section>
+
+        @@include('blocks/about-block/about-block.html')
+
+        <section class="container  section">
+          @@include('blocks/section-header/section-header.html', {
+            "tag": "h2",
+            "text": "Галерея"
+          })
+
+          <div class="row  card-wrapper">
+
+            <div class="col-1-2-4">
+              @@include('blocks/gallery-card/gallery-card.html', {
+                "img": "media-card-img-1",
+                "caption": "Caption-1"
+              })
+            </div>
+            <div class="col-1-2-4">
+              @@include('blocks/gallery-card/gallery-card.html', {
+                "img": "media-card-img-2",
+                "caption": "Caption-2"
+              })
+            </div>
+            <div class="col-1-2-4">
+              @@include('blocks/gallery-card/gallery-card.html', {
+                "img": "media-card-img-3",
+                "caption": "Caption-3"
+              })
+            </div>
+            <div class="col-1-2-4">
+              @@include('blocks/gallery-card/gallery-card.html', {
+                "img": "media-card-img-4",
+                "caption": "Caption-4"
+              })
+            </div>
+            <div class="col-1-2-4">
+              @@include('blocks/gallery-card/gallery-card.html', {
+                "img": "media-card-img-1",
+                "caption": "Caption-1"
+              })
+            </div>
+            <div class="col-1-2-4">
+              @@include('blocks/gallery-card/gallery-card.html', {
+                "img": "media-card-img-2",
+                "caption": "Caption-2"
+              })
+            </div>
+            <div class="col-1-2-4">
+              @@include('blocks/gallery-card/gallery-card.html', {
+                "img": "media-card-img-3",
+                "caption": "Caption-3"
+              })
+            </div>
+            <div class="col-1-2-4">
+              <a href="#" class="btn  btn--card">
+                <span>Дивитись галерею</span>
+                <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#arrow-right"></use></svg>
+              </a>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="container section" style="background-color: #f6f6f6;">
+          <h2 class="visually-hidden">Соц. Реклама (Заголовок)</h2>
+
+          <div class="row  card-wrapper">
+
+            <div class="col-1-2">
+              @@include('blocks/banner/banner.html', {
+                "img": "banner-1"
+              })
+            </div>
+
+            <div class="col-1-2">
+              @@include('blocks/banner/banner.html', {
+                "img": "banner-2"
+              })
+            </div>
+
+          </div>
         </section>
 
       </main>
@@ -79,6 +226,8 @@
     </div>
 
   </div>
+
+  @@include('blocks/search-on/search-on.html')
 
   @@include('_include/page_bottom.html')
 

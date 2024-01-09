@@ -1,9 +1,20 @@
-// В этом файле должны быть стили для БЭМ-блока gallery-card, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .gallery-card {
 
   $block-name:                &; // #{$block-name}__element
 
+  border-radius: $border-radius-lg;
+
+  img {
+    object-fit: cover;
+    object-position: center;
+    transition: transform $transition-time;
+  }
+
+  &:hover,
+  &:focus {
+
+    img {
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  }
 }

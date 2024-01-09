@@ -1,0 +1,12 @@
+.banner {
+
+  $block-name:                &; // #{$block-name}__element
+
+  border-radius: $border-radius-lg;
+
+  img {
+    object-fit: cover;
+    object-position: center;
+    //transition: transform $transition-time;
+  }
+}

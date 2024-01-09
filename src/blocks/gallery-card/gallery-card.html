@@ -1,14 +1,29 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
-@ @include('blocks/gallery-card/gallery-card.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="gallery-card">content</div>
-
+@ @include('blocks/gallery-card/gallery-card.html', {
+  "img": "media-card-img-1",
+  "caption": "Caption-1"
+})
 -->
+
+<a href="img/@@img.jpg" class="embed-responsive embed-responsive--4-3  gallery-card"
+  data-fancybox="gallery" data-caption="@@caption">
+  <span class="visually-hidden">@@caption</span>
+  <picture>
+    <source srcset="img/@@img.webp" media="(min-width: 1280px)" type="image/webp">
+    <source srcset="img/@@img.jpg" media="(min-width: 1280px)">
+      <!-- 282x212, 564x414 2x -->
+    <source srcset="img/@@img.webp" media="(min-width: 1024px)" type="image/webp">
+    <source srcset="img/@@img.jpg" media="(min-width: 1024px)">
+      <!-- 880x660 -->
+    <source srcset="img/@@img.webp" media="(min-width: 768px)" type="image/webp">
+    <source srcset="img/@@img.jpg" media="(min-width: 768px)">
+      <!-- 690x517 -->
+    <source srcset="img/@@img.webp" media="(min-width: 480px)" type="image/webp">
+    <source srcset="img/@@img.jpg" media="(min-width: 480px)">
+      <!-- 864x648 -->
+    <source srcset="img/@@img.webp" media="(min-width: 320px)" type="image/webp">
+    <source srcset="img/@@img.jpg" media="(min-width: 320px)">
+      <!-- 720x540 -->
+    <img src="img/@@img.jpg" alt="@@caption" width="880" height="660" loading="lazy">
+  </picture>
+</a>
