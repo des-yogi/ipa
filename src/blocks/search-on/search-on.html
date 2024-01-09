@@ -1,0 +1,30 @@
+<!--DEV
+@ @include('blocks/search-on/search-on.html')
+-->
+
+<div class="search-on  offcanvas offcanvas-top" id="search-on" tabindex="-1" aria-labelledby="search-on-lbl">
+
+  <div class="container">
+    <div class="search-on__header  offcanvas-header">
+      <h4 class="visually-hidden" id="search-on-lbl">Форма пошуку по сайту</h4>
+
+      <button class="btn  btn--icon" data-bs-dismiss="offcanvas">
+        <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#close"></use></svg>
+        <span class="visually-hidden">Закрити форму</span>
+      </button>
+    </div>
+
+    <div class="search-on__body  offcanvas-body">
+      <form class="search-on__form" action="#" method="post">
+        <label class="field-text" style="margin-bottom:0;">
+          <span class="visually-hidden">Поле для рядка пошуку</span>
+          <span class="field-text__input-wrap">
+            <input class="field-text__input  field-text__input--required" type="search" name="search" value="" placeholder="Пошук по сайту…">
+            <span class="field-text__help-text"></span>
+          </span>
+        </label>
+      </form>
+    </div>
+  </div>
+
+</div>

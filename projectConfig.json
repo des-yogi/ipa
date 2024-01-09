@@ -29,7 +29,11 @@
     "gallery-card": [],
     "filter-list": [],
     "section-header": [],
-    "section": []
+    "section": [],
+    "copyrights": [],
+    "social": [],
+    "banner": [],
+    "search-on": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

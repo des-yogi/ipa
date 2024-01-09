@@ -11,9 +11,22 @@
 <article class="media-card">
   <div class="embed-responsive embed-responsive--4-3  media-card__img">
     <picture>
+      <source srcset="img/@@img.webp" media="(min-width: 1280px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 1280px)">
+        <!-- 282x212, 564x414 2x -->
+      <source srcset="img/@@img.webp" media="(min-width: 1024px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 1024px)">
+        <!-- 880x660 -->
+      <source srcset="img/@@img.webp" media="(min-width: 768px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 768px)">
+        <!-- 690x517 -->
+      <source srcset="img/@@img.webp" media="(min-width: 480px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 480px)">
+        <!-- 864x648 -->
       <source srcset="img/@@img.webp" media="(min-width: 320px)" type="image/webp">
       <source srcset="img/@@img.jpg" media="(min-width: 320px)">
-      <img src="img/@@img.jpg" alt="Caption" width="" height="" loading="lazy">
+        <!-- 720x540 -->
+      <img src="img/@@img.jpg" alt="Caption" width="880" height="660" loading="lazy">
     </picture>
   </div>
   <div class="media-card__text">

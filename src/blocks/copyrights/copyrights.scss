@@ -1,0 +1,82 @@
+.copyrights {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    gap: 48px 0;
+
+    @media (min-width: $screen-md) {
+      gap: 24px 0;
+    }
+  }
+
+  &__owner-col {
+    @include col(xs, 12);
+    //@include col(md, 8);
+    @include col(xl, 10);
+  }
+
+  &__dev-col {
+    @include col(xs, 12);
+    @include col-offset(md, 8);
+    @include col(md, 4);
+    @include col-offset(xl, 0);
+    @include col(xl, 2);
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  }
+
+  &__list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+
+    @media (min-width: $screen-md) {
+      gap: 24px;
+    }
+  }
+
+  &__item {
+
+    &.active {
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__owner {
+    font-size: $font-size-sm;
+  }
+
+  &__dev {
+    display: inline-flex;
+    align-items: center;
+    font-size: $font-size-sm;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+
+    span {
+      margin-right: 8px;
+    }
+  }
+}

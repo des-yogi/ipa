@@ -1,8 +1,93 @@
-// В этом файле должны быть стили для БЭМ-блока page-footer, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .page-footer {
+  padding-top: 48px;
+  padding-bottom: 24px;
+  color: $white;
+  background-color: $secondary-color;
 
   $block-name:                &; // #{$block-name}__element
+
+  h2, h3, h4, h5, h6,
+  .h2,.h3,.h4,.h5,.h6 {
+    color: inherit;
+    font-weight: 500;
+  }
+
+  .copyrights * {
+    color: inherit;
+  }
+
+  &__inner {
+    gap: 48px 0;
+    margin-bottom: 48px;
+  }
+
+  &__logo-col {
+    @include col(xs, 12);
+    @include col(xl, 4);
+  }
+
+  &__menu-col {
+    @include col(xs, 12);
+    @include col(md, 8);
+    @include col(xl, 5);
+  }
+
+  &__social-col {
+    @include col(xs, 12);
+    @include col(md, 4);
+    @include col(xl, 3);
+
+    @media (min-width: $screen-md) {
+      padding-top: 6px;
+    }
+  }
+
+  &__nav {
+    margin-left: -12px;
+
+    @media (min-width: $screen-xl) {
+      margin-left: 0;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 16px;
+
+    @media (min-width: $screen-md) {
+      max-width: 430px;
+    }
+
+    @media (min-width: $screen-xl) {
+      gap: 24px 16px;
+    }
+  }
+
+  &__nav-item {
+
+    &.active {
+
+      #{$block-name}__nav-link {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__nav-link {
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 6px 12px;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: $white;
+    }
+  }
 }
