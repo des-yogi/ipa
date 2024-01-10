@@ -1,0 +1,50 @@
+.article {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__col-main {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 8);
+  }
+
+  &__col-aside {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 4);
+  }
+
+  &__col-gallery {
+    @include col(xs, 12);
+  }
+
+  &__content {
+
+  }
+
+  &__title {
+
+  }
+
+  &__introtext {
+    font-size: $font-size-lg;
+    color: $title-color;
+  }
+
+  &__main-img-wrapper {
+    padding: 48px 0;
+    margin: 24px 0;
+    border-top: 1px solid $main-color;
+    border-bottom: 1px solid $main-color;
+  }
+
+  &__main-img {
+    background-color: $block-bg;
+    border-radius: $border-radius-lg;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

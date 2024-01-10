@@ -178,10 +178,10 @@ hr {
   box-sizing: content-box; // Проблема Firefox
   height: 0;               // Проблема Firefox
   overflow: visible;       // Проблема Edge и IE
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 40px;
+  margin-bottom: 40px;
   border: 0;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid $main-color;
 }
 
 .small,

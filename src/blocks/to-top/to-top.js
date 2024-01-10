@@ -24,10 +24,10 @@
 
   function visibilityToggle() {
     if(window.pageYOffset >= 500) {
-      document.getElementById('to-top').classList.add('to-top--visible');
+      document.getElementById('toTop').classList.add('to-top--visible');
     }
     else {
-      document.getElementById('to-top').classList.remove('to-top--visible');
+      document.getElementById('toTop').classList.remove('to-top--visible');
     }
   }
 

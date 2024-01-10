@@ -144,12 +144,14 @@ img {
 }
 
 a {
+  text-decoration: none;
   color: $link-color;
   background-color: transparent;
-  transition: color 0.3s;
+  transition: color $transition-time;
 
   &:hover,
   &:focus {
+    text-decoration: underline;
     color: $link-color--hover;
   }
 
@@ -417,6 +419,10 @@ a {
   gap: 24px 0;
 }
 
+.block-wrapper {
+  gap: 48px 0;
+}
+
 .col-1-2-4 {
   @include col(xs, 12);
   @include col(md, 6);
@@ -427,6 +433,22 @@ a {
 .col-1-2 { // banner
   @include col(xs, 12);
   @include col(md, 6);
+}
+
+.col-left-sidebar {
+  @include col(xs, 12);
+  @include col(xl, 3);
+}
+
+.col-main-content {
+  @include col(xs, 12);
+  @include col(xl, 9);
+}
+
+.col-inner-1-2-3 {
+  @include col(xs, 12);
+  @include col(md, 6);
+  @include col(xl, 4);
 }
 
 // background-image: svg-load('../blocks/phones-modal/bg-img/phone.svg', fill=$main-color);

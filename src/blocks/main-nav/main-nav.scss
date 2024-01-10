@@ -123,6 +123,7 @@
     &:hover,
     &:focus {
       text-decoration: none;
+      color: $link-color;
       //background-color: aquamarine;
     }
   }
