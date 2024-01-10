@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Контакти</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main>
+
+        <div class="container  section  contacts">
+          @@include('blocks/section-header/section-header.html', {
+            "tag": "h1",
+            "text": "Контакти"
+          })
+
+          <div class="row  block-wrapper">
+
+            <div class="contacts__col-text">
+              <div class="contacts__text">
+                <p class="contacts__introtext">Ви можете написати нам з будь-якого питання, заповнивши форму зворотнього зв’язку.</p>
+
+                <section class="contacts__ways">
+                  <h2 class="visually-hidden">Варіанти для контактування</h2>
+
+                  <ul class="list-nostyled  contacts__list">
+
+                    <li class="contacts__item">
+                      <p class="contacts__caption">Адреса</p>
+                      <p class="contacts__info">01135, Україна, м.Київ, вул.Золотоустівська, 51, оф.1</p>
+                    </li>
+
+                    <li class="contacts__item">
+                      <p class="contacts__caption">Телефон</p>
+                      <a href="tel:+380444868637" class="contacts__info  contacts__info--link">(044) 486 - 86 - 37</a>
+                    </li>
+
+                    <li class="contacts__item">
+                      <p class="contacts__caption">Email</p>
+                      <a href="mailto:srd-ipa@ukr.net" class="contacts__info  contacts__info--link">srd-ipa@ukr.net</a>
+                    </li>
+
+                    <li class="contacts__item">
+                      <p class="contacts__caption">Сайт МГО УС МПА</p>
+                      <a href="https://www.ipa-ua.org" class="contacts__info  contacts__info--link" target="_blank" rel="nofollow noopener">www.ipa-ua.org</a>
+                    </li>
+
+                    <li class="contacts__item">
+                      <p class="contacts__caption">Соцмережі</p>
+                      <a href="https://www.facebook.com/" class="contacts__info  contacts__info--link  social__link" target="_blank" rel="nofollow noopener">
+                        <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook-color"></use></svg>
+                        <span>www.facebook.com</span>
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+
+              </div>
+
+            </div>
+
+            <div class="contacts__col-form">
+              <form class="contact-form" action="#" method="post" aria-labelledby="contact-form-lbl">
+                <p id="contact-form-lbl" class="contact-form__title">Написати нам</p>
+
+                <label class="field-text">
+                  <span class="field-text__name">Ім'я</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input  field-text__input--required" type="text" name="name" value="">
+                    <span class="field-text__help-text" data-error="name"></span>
+                  </span>
+                </label>
+
+                <label class="field-text">
+                  <span class="field-text__name">Телефон</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input  field-text__input--required  phone-mask" type="text" inputmode="tel" name="tel" value="">
+                    <span class="field-text__help-text" data-error="tel"></span>
+                  </span>
+                </label>
+
+                <label class="field-text">
+                  <span class="field-text__name">Повідомлення</span>
+                  <span class="field-text__input-wrap">
+                    <textarea class="field-text__input  field-text__input--required" name="message" rows="5" placeholder="Текст…"></textarea>
+                    <span class="field-text__help-text" data-error="message"></span>
+                  </span>
+                </label>
+
+                <div class="field-text  contact-form__agreement">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
+                    <span class="field-checkbox__name-text">Даю згоду на обробку персональних даних відповідно до <a href="#">Політики конфіденційності</a></span>
+                  </label>
+
+                  <div class="contact-form__submit-wrapper">
+                    <div class="contact-form__captcha">
+                      <img src="img/reCaptcha.gif" alt="" style="display:block;" width="304" height="78">
+                    </div>
+                    <button class="btn  btn--main  contact-form__submit" type="submit">
+                      <span>Відправити</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="contacts__map-wrapper">
+          <iframe title="Карта" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.346852150021!2d30.48416835652242!3d50.45326546979475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce629e8423ff%3A0xc88b20ebc288f95f!2z0LLRg9C70LjRhtGPINCX0L7Qu9C-0YLQvtGD0YHRgtGW0LLRgdGM0LrQsCwgNTEsIDEsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1704887923884!5m2!1suk!2sua" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/search-on/search-on.html')
+
+  @@include('blocks/to-top/to-top.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

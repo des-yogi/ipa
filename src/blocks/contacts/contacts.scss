@@ -1,0 +1,65 @@
+ .contacts {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__col-text {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(lg, 8);
+    @include col(xl, 5);
+  }
+
+  &__col-form {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(lg, 8);
+    @include col-offset(xl, 1);
+    @include col(xl, 5);
+  }
+
+  &__introtext {
+    margin-bottom: 40px;
+    font-size: $font-size-lg;
+  }
+
+  &__item {
+    text-decoration: none;
+
+    & + & {
+      margin-top: 24px;
+    }
+  }
+
+  &__caption {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: $title-color;
+  }
+
+  &__info {
+    margin-top: 0;
+
+    &--link {
+      color: inherit;
+
+      &:hover,
+      &:focus {
+        color: $link-color--hover;
+      }
+    }
+  }
+
+  &__map-wrapper {
+    width: 100%;
+    height: 360px;
+    background-color: $border-color;
+    overflow: hidden;
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  }
+}

@@ -3,24 +3,45 @@
   $block-name:                &; // #{$block-name}__element
 
   position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  z-index: 1;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  background-color: #000;
+  right: 16px;
+  bottom: 24px;
+  z-index: 10;
+  width: 56px;
+  height: 56px;
   color: transparent;
+  background-color: rgba($secondary-color, 0.8);
   font: 0/0 a;
-  // см. img_to_bg/to-up.svg
-  // http://yoksel.github.io/url-encoder/ru/
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 11' width='17' height='11'%3E%3Cpath fill='%23fff' d='M.202 1.97L1.956.204A.61.61 0 0 1 2.43 0a.61.61 0 0 1 .47.204L8.5 5.84 14.1.204A.61.61 0 0 1 14.57 0a.61.61 0 0 1 .474.204l1.754 1.766a.618.618 0 0 1 .202.473.62.62 0 0 1-.202.476l-7.826 7.875A.61.61 0 0 1 8.5 11a.61.61 0 0 1-.472-.204L.202 2.92A.618.618 0 0 1 0 2.444c0-.203.067-.34.202-.475z'/%3E%3C/svg%3E");
+  background-size: 30px;
+  background-image: svg-load('../blocks/sprite-svg/svg/chevron-down.svg', fill=$white);
   background-repeat: no-repeat;
   background-position: center;
+  border: 2px solid $white;
+  border-radius: $border-radius;
   transform: rotate(180deg);
 
+  @media (min-width: $screen-md) {
+    right: 40px;
+    bottom: 120px;
+  }
+
+  @media (min-width: $screen-xl) {
+    right: 40px;
+    bottom: 80px;
+  }
+
+  @media (min-width: $screen-xxl) {
+    bottom: 40px;
+  }
+
   .js & {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s;
+
+    &--visible {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }
 

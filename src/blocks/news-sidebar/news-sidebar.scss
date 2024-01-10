@@ -1,0 +1,9 @@
+// В этом файле должны быть стили для БЭМ-блока news-sidebar, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.news-sidebar {
+
+  $block-name:                &; // #{$block-name}__element
+
+}

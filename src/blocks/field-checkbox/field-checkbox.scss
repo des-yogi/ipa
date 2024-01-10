@@ -3,7 +3,7 @@
   $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 
   &__title {
     display: block;
@@ -14,8 +14,8 @@
   }
 
   &__input-wrap {
-    margin-right: 24px;
-    margin-bottom: 16px;
+    //margin-right: 0;
+    margin-bottom: 8px;
 
     &:last-child {
       margin-right: 0;
@@ -25,9 +25,10 @@
   &__name {
     position: relative;
     display: inline-block;
-    padding-left: 32px;
+    padding: 8px 8px 8px 36px;
     //margin-right: 0.6em;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: $font-size;
     line-height: $line-height;
     cursor: pointer;
 
@@ -40,20 +41,20 @@
   }
 
   &__name-text {
-    color: $title-color;
+    color: $text-color;
 
     &::before {
       content: '';
       position: absolute;
-      top: 0;
+      top: 8px;
       left: 0;
-      width: 22px;
-      height: 22px;
-      border: 1px solid $border-color;
+      width: 24px;
+      height: 24px;
+      border: 1px solid $main-color;
       border-radius: $border-radius / 2;
 
       @at-root input:checked ~ & {
-        background-color: $border-color;
+        background-color: $main-color;
       }
     }
 
@@ -64,10 +65,10 @@
     &::after {
       content: '';
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: calc(8px + 8px);
+      left: 6px;
       width: 12px;
-      height: 8px;
+      height: 6px;
       opacity: 0;
       border-left: 2px solid $white;
       border-bottom: 2px solid $white;
@@ -83,7 +84,7 @@
 
   &__input {
     position: absolute;
-    top: 0.7em;
+    top: 50%;
     left: 0;
     padding: 0;
     margin: 0;

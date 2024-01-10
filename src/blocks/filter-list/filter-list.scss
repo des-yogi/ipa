@@ -1,9 +1,47 @@
-// В этом файле должны быть стили для БЭМ-блока filter-list, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .filter-list {
+
+  @media (min-width: $screen-xl) {
+    position: sticky;
+    top: 20px;
+  }
 
   $block-name:                &; // #{$block-name}__element
 
+  &__toggler {
+    width: 100%;
+
+    @media (min-width: $screen-xl) {
+      display: none;
+    }
+  }
+
+  &__panel {
+    width: 100%;
+    padding: 24px 16px;
+    background-color: $block-bg;
+    border: 1px solid $border-color;
+    border-radius: $border-radius-lg;
+
+    @media (min-width: $screen-sm) and (max-width: $screen-xl - 1) {
+      padding: 24px;
+    }
+
+    @media (min-width: $screen-xl) {
+      display: block;
+      position: static;
+    }
+  }
+
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  &__legend {
+    margin-bottom: 16px;
+    font-size: $font-size;
+    font-weight: 700;
+    color: $title-color;
+  }
 }

@@ -1,14 +1,56 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/filter-list/filter-list.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="filter-list">content</div>
-
 -->
+
+<section class="filter-list  dropdown">
+  <h2 class="visually-hidden">Фільтрація публікацій за темами</h2>
+  <button class="btn  filter-list__toggler" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+    <span>Фільтр</span>
+  </button>
+
+  <div class="filter-list__panel  dropdown-menu">
+    <form class="filter-list__form" action="#" method="post">
+      <fieldset class="filter-list__fieldset">
+        <legend class="filter-list__legend">Тема матеріалу</legend>
+
+        <div class="field-checkbox" style="margin-bottom:0;">
+          <div class="field-checkbox__input-wrap">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="name1" value="">
+              <span class="field-checkbox__name-text">Конференції</span>
+            </label>
+          </div>
+          <div class="field-checkbox__input-wrap">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="name2" value="">
+              <span class="field-checkbox__name-text">Подорожі</span>
+            </label>
+          </div>
+          <div class="field-checkbox__input-wrap">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="name3" value="">
+              <span class="field-checkbox__name-text">Спорт</span>
+            </label>
+          </div>
+          <div class="field-checkbox__input-wrap">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="name4" value="">
+              <span class="field-checkbox__name-text">Відпочинок</span>
+            </label>
+          </div>
+          <div class="field-checkbox__input-wrap">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="name5" value="">
+              <span class="field-checkbox__name-text">Культурні заходи</span>
+            </label>
+          </div>
+        </div>
+
+      </fieldset>
+
+      <button class="btn" type="submit" style="width:100%; margin-top:24px;">
+        <span>Застосувати</span>
+      </button>
+    </form>
+  </div>
+</section>
