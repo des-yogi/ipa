@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Публікації: Нічого не знайдено</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main>
+
+        <div class="container  section">
+          @@include('blocks/section-header/section-header.html', {
+            "tag": "h1",
+            "text": "Публікації"
+          })
+
+          <div class="row  card-wrapper">
+
+            <div class="col-left-sidebar">
+              @@include('blocks/filter-list/filter-list.html')
+            </div>
+
+            <div class="col-main-content">
+
+              <div class="section  section--not-found">
+                <img class="not-found" src="img/not-found-Img.svg" alt="" width="375" height="277" loading="lazy">
+                <p class="h2" style="text-align: center;">Нічого не знайдено</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/search-on/search-on.html')
+
+  @@include('blocks/to-top/to-top.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

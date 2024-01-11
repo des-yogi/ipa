@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Помилка 404</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main>
+
+        <div class="container  section  error-404">
+
+          <div class="section-header">
+            <h1 class="section-header__title">
+              <span class="section-header__oops">йой…</span>
+              <span class="section-header__info">
+                Сталася помилка! Сторінку за Вашим запитом не знайдено.
+                <span class="visually-hidden">Error 404</span>
+              </span>
+            </h1>
+
+            <div class="error-404__img-wrapper">
+              <img src="img/error-404.svg" width="308" height="343" alt="">
+
+              <a href="index.html" class="btn"><span style="text-transform:uppercase;">На головну</span></a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/search-on/search-on.html')
+
+  @@include('blocks/to-top/to-top.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

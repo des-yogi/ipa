@@ -1,4 +1,4 @@
-.news-sidebar {
+.event-sidebar {
   padding: 24px 16px;
   background-color: $block-bg;
   border-radius: $border-radius-lg;
@@ -12,15 +12,11 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  .publishedon {
-    margin-top: 8px;
-  }
-
   &__title {
     margin: 0 0 24px;
   }
 
-  &__list {
+  &__inner {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -38,24 +34,28 @@
   }
 
   &__item {
+    margin-bottom: 16px;
 
-    &:not(:last-child) {
-      padding-bottom: 16px;
-      margin-bottom: 16px;
-      border-bottom: 1px solid $border-color;
-
-      @media (min-width: $screen-md) and (max-width: $screen-xl - 1) {
-        border: none;
-      }
+    p {
+      margin: 0;
+      font-size: 18px;
     }
+
+    // p + p {
+    //   margin-top: 2px;
+    // }
   }
 
-  &__link {
+  &__caption {
+    margin: 0 0 4px;
+    font-size: $font-size;
     font-weight: 500;
+    text-transform: none;
+    color: $main-color;
   }
 
-  &__all-news {
-    width: 100%;
-    margin-top: 24px;
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 8px;
   }
 }

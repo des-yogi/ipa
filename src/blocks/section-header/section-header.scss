@@ -10,7 +10,24 @@
     border-bottom: 2px solid $main-color;
   }
 
-  // h1 {
-  //    margin-bottom: 48px !important;
-  // }
+  &__oops {
+    display: block;
+    margin-bottom: 16px;
+    color: $main-color;
+  }
+
+  &__info {
+    font-size: $font-size-lg;
+    font-weight: 500;
+    text-transform: none;
+  }
+
+  &__search-result {
+    display: block;
+    margin-top: 24px;
+    font-size: $font-size;
+    font-weight: 400;
+    text-transform: none;
+    color: $text-color;
+  }
 }

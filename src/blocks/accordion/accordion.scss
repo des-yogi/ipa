@@ -6,6 +6,7 @@
   &__item {
     padding: 12px 16px 12px 16px;
     background-color: $block-bg;
+    border-radius: $border-radius-lg;
 
     & + & {
       margin-top: 16px;
@@ -98,10 +99,6 @@
         transition: all $transition-time;
       }
     }
-  }
-
-  &__collapse {
-
   }
 
   &__body {

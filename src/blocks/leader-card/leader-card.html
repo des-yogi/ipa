@@ -1,0 +1,27 @@
+<!--DEV
+@ @include('blocks/leader-card/leader-card.html', {
+  "photo": "leader-1",
+  "name": "П'єр Мартен Мулен",
+  "position": "Президент міжнародної поліцейської асоціації",
+  "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed.  Diam dignissim tincidunt amet"
+})
+-->
+
+<figure class="leader-card">
+  <div class="embed-responsive embed-responsive--1-1  leader-card__photo">
+    <picture>
+      <source srcset="img/@@photo.webp,
+                      img/@@photo.webp 2x" type="image/webp">
+      <img  src="img/@@photo.jpg"
+            srcset="img/@@photo.jpg,
+                    img/@@photo.jpg 2x"
+            width="200" height="200" alt="@@name" loading="lazy">
+            <!-- 200x200, 400x400 2x -->
+    </picture>
+  </div>
+  <figcaption class="leader-card__caption">
+    <p class="leader-card__name">@@name</p>
+    <p class="leader-card__position">@@position</p>
+    <p class="leader-card__descr">@@descr</p>
+  </figcaption>
+</figure>

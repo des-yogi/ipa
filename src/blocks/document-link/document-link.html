@@ -1,0 +1,16 @@
+<!--DEV
+@ @include('blocks/document-link/document-link.html', {
+  "name": "Cтатут",
+  "info": "pdf, 218 KB"
+})
+-->
+
+<a href="#" class="document-link" title="Завантажити «@@name»">
+  <span class="document-link__icon">
+    <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"></use></svg>
+  </span>
+  <p class="document-link__descr">
+    <span class="document-link__name">@@name</span>
+    <span class="document-link__file-info">@@info</span>
+  </p>
+</a>

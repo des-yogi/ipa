@@ -1,9 +1,9 @@
 .countdown {
   display: inline-flex;
-  font-size: inherit;
-  font-weight: inherit;
+  font-size: 24px;
+  font-weight: 700;
   text-align: center;
-  color: $main-color;
+  color: $title-color;
 
   $block-name:                &; // #{$block-name}__element
 
@@ -23,7 +23,7 @@
       vertical-align: baseline;
       content: attr(data-divider);
       margin-right: 4px;
-      margin-left: 2px;
+      margin-left: 0;
       font-size: inherit;
       font-weight: inherit;
     }
@@ -31,9 +31,13 @@
 
   &__deadline-message {
     display: none;
+    width: 100%;
+    padding: 8px 0;
     font-size: inherit;
     font-weight: 700;
     color: $color-danger;
+    //background-color: $white;
+    //border-radius: $border-radius;
 
     &.visible {
       display: inline-block;

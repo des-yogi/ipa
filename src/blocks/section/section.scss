@@ -9,4 +9,18 @@
     justify-content: center;
     margin-top: 48px;
   }
+
+  &--not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .not-found {
+    display: block;
+    width: 375px;
+    height: 277px;
+  }
 }

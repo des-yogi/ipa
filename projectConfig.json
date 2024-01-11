@@ -37,7 +37,12 @@
     "contacts": [],
     "contact-form": [],
     "article": [],
-    "news-sidebar": []
+    "news-sidebar": [],
+    "error-404": [],
+    "search-result": [],
+    "document-link": [],
+    "event-sidebar": [],
+    "leader-card": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
