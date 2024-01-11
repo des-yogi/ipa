@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Документи</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main>
+
+        <div class="container  section">
+          @@include('blocks/section-header/section-header.html', {
+            "tag": "h1",
+            "text": "Документи"
+          })
+
+          <section>
+            <h2 class="visually-hidden">Завантажити документ на ваш пристрій</h2>
+
+            <ol class="list-nostyled  document-link__list">
+              <li class="document-link__item">
+                @@include('blocks/document-link/document-link.html', {
+                  "name": "Cтатут",
+                  "info": "pdf, 218 KB"
+                })
+              </li>
+
+              <li class="document-link__item">
+                @@include('blocks/document-link/document-link.html', {
+                  "name": "Регламент",
+                  "info": "pdf, 218 KB"
+                })
+              </li class="document-link__item">
+
+              <li class="document-link__item">
+                @@include('blocks/document-link/document-link.html', {
+                  "name": "Анкета-заявка",
+                  "info": "pdf, 218 KB"
+                })
+              </li>
+
+              <li class="document-link__item">
+                @@include('blocks/document-link/document-link.html', {
+                  "name": "Умови та положення",
+                  "info": "pdf, 218 KB"
+                })
+              </li>
+            </ol>
+          </section>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/search-on/search-on.html')
+
+  @@include('blocks/to-top/to-top.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

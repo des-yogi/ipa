@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Про нас</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main>
+
+        <article class="container  section  article">
+
+          @@include('blocks/section-header/section-header.html', {
+            "tag": "h1",
+            "text": "Про нас"
+          })
+
+          <div class="row  block-wrapper">
+
+            <div class="article__col-main">
+              <div class="article__content">
+
+                <div class="article__main-text">
+                  <h2>історична довідка</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
+
+                  <div class="img-wrapper">
+                    <!-- min-width: 730px для одинарной картинки -->
+                    <img src="img/media-card-img-1.jpg" alt="">
+                    <img src="img/media-card-img-2.jpg" alt="">
+                  </div>
+
+                  <h3>H3</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
+                  <!-- min-width: 995px для одинарной картинки -->
+                  <img src="img/media-card-img-3.jpg" alt="">
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
+
+                  <p>Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Диких, приставка себя даже которое дорогу, если там подзаголовок, жаренные переулка маленький переписывается домах, текстов текстами встретил.</p>
+
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Similique neque fugit unde. Minima error quam fugit laudantium nostrum libero quidem? Blanditiis, aperiam cupiditate id ratione magni non hic qui sunt minus aut!</p>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="article__col-aside">
+              <!-- Empty -->
+            </div>
+
+          </div>
+
+          <section class="section  leaders" style="padding-bottom: 0;">
+            @@include('blocks/section-header/section-header.html', {
+              "tag": "h2",
+              "text": "Керівництво"
+            })
+
+            <div class="row  card-wrapper  card-wrapper--leaders">
+
+              <div class="col-1-1-2">
+                @@include('blocks/leader-card/leader-card.html', {
+                  "photo": "leader-1",
+                  "name": "П'єр Мартен Мулен",
+                  "position": "Президент міжнародної поліцейської асоціації",
+                  "descr": "Lorem ipsum dolor sit amet, consectetur. Ut cursus id aliquet convallis diam dictum euismod sed.  Diam dignissim tincidunt amet"
+                })
+              </div>
+
+              <div class="col-1-1-2">
+                @@include('blocks/leader-card/leader-card.html', {
+                  "photo": "leader-2",
+                  "name": "Василишин А.В.",
+                  "position": "Президент УГО УС МПА",
+                  "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam dignissim"
+                })
+              </div>
+
+              <div class="col-1-1-2">
+                @@include('blocks/leader-card/leader-card.html', {
+                  "photo": "leader-3",
+                  "name": "Черней В.В.",
+                  "position": "Ректор Академії",
+                  "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam dignissim tincidunt amet"
+                })
+              </div>
+
+              <div class="col-1-1-2">
+                @@include('blocks/leader-card/leader-card.html', {
+                  "photo": "leader-1",
+                  "name": "П'єр Мартен Мулен",
+                  "position": "Президент міжнародної поліцейської асоціації",
+                  "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed.  Diam dignissim tincidunt amet"
+                })
+              </div>
+
+              <div class="col-1-1-2">
+                @@include('blocks/leader-card/leader-card.html', {
+                  "photo": "leader-2",
+                  "name": "Василишин А.В.",
+                  "position": "Президент УГО УС МПА",
+                  "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                })
+              </div>
+
+              <div class="col-1-1-2">
+                @@include('blocks/leader-card/leader-card.html', {
+                  "photo": "leader-3",
+                  "name": "Черней В.В.",
+                  "position": "Ректор Академії",
+                  "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed.  Diam dignissim tincidunt amet"
+                })
+              </div>
+
+            </div>
+
+          </section>
+
+        </article>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/search-on/search-on.html')
+
+  @@include('blocks/to-top/to-top.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

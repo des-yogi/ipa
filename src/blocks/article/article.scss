@@ -10,7 +10,7 @@
 
   &__col-aside {
     @include col(xs, 12);
-    @include col(md, 10);
+    //@include col(md, 12);
     @include col(xl, 4);
   }
 
@@ -18,12 +18,8 @@
     @include col(xs, 12);
   }
 
-  &__content {
-
-  }
-
   &__title {
-
+    margin-top: 0;
   }
 
   &__introtext {
@@ -45,6 +41,23 @@
     img {
       object-fit: cover;
       object-position: center;
+    }
+  }
+
+  &__main-text {
+
+    & > h1, h2, h3, h4, h5, h6 {
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
+    & > img {
+      display: block;
+      width: 100%;
+      margin: 24px 0;
+      border-radius: $border-radius-lg;
     }
   }
 }

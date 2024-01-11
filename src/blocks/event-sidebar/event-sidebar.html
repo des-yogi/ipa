@@ -1,0 +1,59 @@
+<!--DEV
+@ @include('blocks/event-sidebar/event-sidebar.html')
+-->
+
+<div class="event-sidebar">
+  <h2 class="visually-hidden">Додаткова інформація про подію</h2>
+
+  <section class="event-sidebar__item">
+    <h3 class="event-sidebar__caption">До початку залишилось</h3>
+
+    @@include('../../blocks/countdown/countdown.html', {
+      "deadline": "2024-02-10"
+    })
+  </section>
+
+  <div class="event-sidebar__inner">
+    <section class="event-sidebar__item">
+      <h3 class="event-sidebar__caption">Ментор</h3>
+      <p>Капітанський А.І.</p>
+    </section>
+
+    <section class="event-sidebar__item">
+      <h3 class="event-sidebar__caption">Тип</h3>
+      <p>Офлайн</p>
+    </section>
+
+    <section class="event-sidebar__item">
+      <h3 class="event-sidebar__caption">Місто</h3>
+      <p>Київ</p>
+    </section>
+
+    <section class="event-sidebar__item">
+      <h3 class="event-sidebar__caption">Адреса</h3>
+      <p>вул. Північно-Сирецька, 3</p>
+    </section>
+
+    <section class="event-sidebar__item">
+      <h3 class="event-sidebar__caption">Дата</h3>
+      <p>
+        з <time datetime="2024-03-24">24.03.2024</time>
+      </p>
+      <p>
+        по <time datetime="2024-03-25">25.03.2024</time>
+      </p>
+    </section>
+
+    <section class="event-sidebar__item">
+      <h4 class="event-sidebar__subtitle">Записатися на подію</h4>
+      <p style="margin-bottom:24px; font-size: 16px;">Ви можете взяти участь у цій події, заповніть форму і ми обов'язково зв'яжемося з вами.</p>
+
+      <a href="#" class="btn" target="_blank" rel="nofollow noopener">
+        <span>Заповнити форму</span>
+        <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#arrow-right"></use></svg>
+      </a>
+    </section>
+  </div>
+
+
+</div>

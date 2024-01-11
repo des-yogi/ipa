@@ -1,0 +1,25 @@
+.search-result {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 8);
+  }
+
+  &__item {
+
+    & + & {
+      margin-top: 24px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+}

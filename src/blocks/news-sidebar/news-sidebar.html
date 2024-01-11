@@ -1,14 +1,36 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/news-sidebar/news-sidebar.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="news-sidebar">content</div>
-
 -->
+
+<aside class="news-sidebar">
+  <h2 class="h4  news-sidebar__title">Інші публікації</h2>
+
+  <ul class="list-nostyled  news-sidebar__list">
+    <li class="news-sidebar__item">
+      <a href="#" class="news-sidebar__link">Відзначаємо знаменну дату</a>
+      <p class="publishedon">
+        <time datetime="2023-04-24">24 квітня 2023</time>
+      </p>
+    </li>
+    <li class="news-sidebar__item">
+      <a href="#" class="news-sidebar__link">Центр Допомоги від МПА</a>
+      <p class="publishedon">
+        <time datetime="2023-04-24">24 квітня 2023</time>
+      </p>
+    </li>
+    <li class="news-sidebar__item">
+      <a href="#" class="news-sidebar__link">Всесвітній конгрес МПА</a>
+      <p class="publishedon">
+        <time datetime="2023-04-24">24 квітня 2023</time>
+      </p>
+    </li>
+    <li class="news-sidebar__item">
+      <a href="#" class="news-sidebar__link">Відзначаємо знаменну дату</a>
+      <p class="publishedon">
+        <time datetime="2023-04-24">24 квітня 2023</time>
+      </p>
+    </li>
+  </ul>
+
+  <a href="#" class="btn  news-sidebar__all-news"><span>Усі публікації</span></a>
+</aside>

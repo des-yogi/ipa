@@ -375,7 +375,6 @@ a {
 .publishedon,
 .address {
   position: relative;
-  z-index: -1;
   display: block;
   width: 100%;
   padding-left: 32px;
@@ -383,12 +382,13 @@ a {
   margin-bottom: 0;
   font-size: $font-size-sm;
   font-weight: 500;
+  color: inherit;
 
   &::before {
     display: block;
     content: "";
     position: absolute;
-    top: -1px;
+    top: -2px;
     left: 0;
     width: 24px;
     height: 24px;
@@ -417,6 +417,10 @@ a {
 
 .card-wrapper {
   gap: 24px 0;
+
+  &--leaders {
+    gap: 40px 0;
+  }
 }
 
 .block-wrapper {
@@ -435,6 +439,11 @@ a {
   @include col(md, 6);
 }
 
+.col-1-1-2 { // leaders
+  @include col(xs, 12);
+  @include col(lg, 6);
+}
+
 .col-left-sidebar {
   @include col(xs, 12);
   @include col(xl, 3);
@@ -449,6 +458,27 @@ a {
   @include col(xs, 12);
   @include col(md, 6);
   @include col(xl, 4);
+}
+
+.img-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  //align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 24px 0;
+
+  & > img {
+    display: block;
+    flex: 1 1;
+    width: 100%;
+    border-radius: $border-radius-lg;
+
+    @media (min-width: $screen-md) {
+      flex-basis: calc(50% - 12px);
+      width: calc(50% - 12px);
+    }
+  }
 }
 
 // background-image: svg-load('../blocks/phones-modal/bg-img/phone.svg', fill=$main-color);
