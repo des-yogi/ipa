@@ -1,0 +1,43 @@
+.media {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__neighbors-link {
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+
+    @media (min-width: $screen-md) {
+      gap: 16px;
+    }
+  }
+
+  &__item {
+    flex: 1 1 auto;
+
+    @media (min-width: $screen-md) {
+      flex: 0 1 auto;
+    }
+
+    &.active {
+
+      #{$block-name}__link {
+        background-color: $blue-800;
+      }
+    }
+  }
+
+  &__link {
+    width: 100%;
+    padding: 0 20px;
+
+    @media (min-width: $screen-sm) {
+      padding: 0 24px;
+    }
+  }
+}

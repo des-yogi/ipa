@@ -1,0 +1,17 @@
+.membership {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__form-wrapper {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: $block-bg;
+    //border-top: 1px solid $border-color;
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 8);
+  }
+}

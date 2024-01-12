@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Членство в МПА</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main>
+
+        <article class="container  section  article  membership">
+
+          @@include('blocks/section-header/section-header.html', {
+            "tag": "h1",
+            "text": "Членство в МПА"
+          })
+
+          <div class="row  block-wrapper">
+
+            <div class="article__col-main">
+              <div class="article__content">
+
+                <div class="article__main-text">
+                  <h2>Умови вступу</h2>
+                  <p><strong>Документи для вступу в УС МПА:</strong></p>
+                  <ol>
+                    <li>Ксерокопія паспорта громадянина України (стор. 1, 2, 11 або 12 - з останнім місцем реєстрації).</li>
+                    <li>Ксерокопія закордонного паспорта (стор. 1) при наявності.</li>
+                    <li>Ксерокопія службового (пенсійного) посвідчення для працівників (пенсіонерів) правоохоронних та силових структур.</li>
+                    <li>Довідка МВС про відсутність судимості (для цивільних громадян).</li>
+                    <li>Дві кольорових фотографії розміром 3,5х4,5.</li>
+                    <li>Власноручно заповнена заява-анкета.</li>
+                  </ol>
+
+                  <h2>Членські внески</h2>
+                  <p>Відповідно рішення ХI Національного Конгресу МГО УС МПА від 16.11.2017р. з 01 січня 2018р. збільшено розмір періодичних внесків відповідно до категорій членства в УС МПА. </p>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
+
+                  <p>Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Диких, приставка себя даже которое дорогу, если там подзаголовок, жаренные переулка маленький переписывается домах, текстов текстами встретил.</p>
+
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Similique neque fugit unde. Minima error quam fugit laudantium nostrum libero quidem? Blanditiis, aperiam cupiditate id ratione magni non hic qui sunt minus aut!</p>
+
+                  <h2>Поновлення в членстві</h2>
+                  <p>Поновлення в членстві УС МПА здійснюється в індивідуальному порядку.</p>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="article__col-aside">
+              <!-- Empty -->
+            </div>
+
+          </div>
+
+        </article>
+
+        <section class="container  membership__form-wrapper">
+          <h2 class="visually-hidden">Форма для вступу до лав МПА</h2>
+
+          <div class="row">
+
+            <div class="membership__col">
+
+              <form class="contact-form" action="#" method="post" aria-labelledby="contact-form-lbl">
+                <p id="contact-form-lbl" class="contact-form__title">Для вступу в асоціацію заповніть форму нижче:</p>
+
+                <label class="field-text">
+                  <span class="field-text__name">Ім'я</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input  field-text__input--required" type="text" name="name" value="">
+                    <span class="field-text__help-text" data-error="name"></span>
+                  </span>
+                </label>
+
+                <label class="field-text">
+                  <span class="field-text__name">Телефон</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input  field-text__input--required  phone-mask" type="text" inputmode="tel" name="tel" value="">
+                    <span class="field-text__help-text" data-error="tel"></span>
+                  </span>
+                </label>
+
+                <label class="field-text">
+                  <span class="field-text__name">Повідомлення</span>
+                  <span class="field-text__input-wrap">
+                    <textarea class="field-text__input  field-text__input--required" name="message" rows="5" placeholder="Текст…"></textarea>
+                    <span class="field-text__help-text" data-error="message"></span>
+                  </span>
+                </label>
+
+                <div class="field-text  contact-form__agreement">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
+                    <span class="field-checkbox__name-text">Даю згоду на обробку персональних даних відповідно до <a href="#">Політики конфіденційності</a></span>
+                  </label>
+
+                  <div class="contact-form__submit-wrapper">
+                    <div class="contact-form__captcha">
+                      <img src="img/reCaptcha.gif" alt="" style="display:block;" width="304" height="78">
+                    </div>
+                    <button class="btn  btn--main  contact-form__submit" type="submit">
+                      <span>Відправити</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+
+          </div>
+
+        </section>
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/search-on/search-on.html')
+
+  @@include('blocks/to-top/to-top.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

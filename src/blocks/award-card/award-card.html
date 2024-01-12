@@ -1,0 +1,33 @@
+<!--DEV
+@ @include('blocks/award-card/award-card.html', {
+  "img": "award-img-1",
+  "caption": "Caption-1")
+
+  multpl-factor: 1.4142
+-->
+
+<a href="img/@@img.jpg" class="embed-responsive embed-responsive--a4  award-card" data-fancybox="gallery" data-caption="@@caption">
+  <span class="visually-hidden">@@caption</span>
+  <picture>
+    <source srcset="img/@@img.webp,
+                    img/@@img.webp 2x" media="(min-width: 1280px)" type="image/webp">
+    <source srcset="img/@@img.jpg,
+                    img/@@img.jpg 2x" media="(min-width: 1280px)">
+      <!-- 282x399, 423x598 2x -->
+    <source srcset="img/@@img.webp,
+                    img/@@img.webp 2x" media="(min-width: 1024px)" type="image/webp">
+    <source srcset="img/@@img.jpg,
+                    img/@@img.jpg 2x" media="(min-width: 1024px)">
+      <!-- 822x1162, 1233x1744 2x -->
+    <source srcset="img/@@img.webp" media="(min-width: 768px)" type="image/webp">
+    <source srcset="img/@@img.jpg" media="(min-width: 768px)">
+      <!-- 690x976 -->
+    <source srcset="img/@@img.webp" media="(min-width: 480px)" type="image/webp">
+    <source srcset="img/@@img.jpg" media="(min-width: 480px)">
+      <!-- 810x1146 -->
+    <source srcset="img/@@img.webp" media="(min-width: 320px)" type="image/webp">
+    <source srcset="img/@@img.jpg" media="(min-width: 320px)">
+      <!-- 668x945 -->
+    <img src="img/@@img.jpg" alt="@@caption" width="1233" height="1744" loading="lazy">
+  </picture>
+</a>
