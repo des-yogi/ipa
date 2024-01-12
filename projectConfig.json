@@ -42,7 +42,11 @@
     "search-result": [],
     "document-link": [],
     "event-sidebar": [],
-    "leader-card": []
+    "leader-card": [],
+    "media": [],
+    "membership": [],
+    "video-card": [],
+    "award-card": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

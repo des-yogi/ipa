@@ -1,0 +1,31 @@
+<!--DEV
+@ @include('blocks/video-card/video-card.html', {
+  "placeholder": "video-placeholder-1"
+})
+-->
+
+<a href="#" class="embed-responsive  lazy-video  video-card" data-video="XZ-7gYp3lTg" title="Video name">
+  <picture>
+    <source srcset="img/@@placeholder.webp,
+                    img/@@placeholder.webp 2x" media="(min-width: 1280px)" type="image/webp">
+    <source srcset="img/@@placeholder.jpg,
+                    img/@@placeholder.jpg 2x" media="(min-width: 1280px)">
+      <!-- 384x216, 576x324 2x -->
+    <source srcset="img/@@placeholder.webp,
+                    img/@@placeholder.webp 2x" media="(min-width: 1024px)" type="image/webp">
+    <source srcset="img/@@placeholder.jpg,
+                    img/@@placeholder.jpg 2x" media="(min-width: 1024px)">
+      <!-- 550x309, 825x464 2x -->
+    <source srcset="img/@@placeholder.webp" media="(min-width: 768px)" type="image/webp">
+    <source srcset="img/@@placeholder.jpg" media="(min-width: 768px)">
+      <!-- 690x388 -->
+    <source srcset="img/@@placeholder.webp" media="(min-width: 480px)" type="image/webp">
+    <source srcset="img/@@placeholder.jpg" media="(min-width: 480px)">
+      <!-- 810x456 -->
+    <source srcset="img/@@placeholder.webp" media="(min-width: 320px)" type="image/webp">
+    <source srcset="img/@@placeholder.jpg" media="(min-width: 320px)">
+      <!-- 667x375 -->
+    <img src="img/@@placeholder.jpg" alt="" width="900" height="506" loading="lazy">
+  </picture>
+  <span class="video-card__play-btn  ytb-btn" aria-hidden="true"></span>
+</a>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Медіа: Відео</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main>
+
+        <div class="container  section  media">
+
+          @@include('blocks/section-header/section-header.html', {
+            "tag": "h1",
+            "text": "Відео"
+          })
+
+          <nav class="media__neighbors-link" aria-labelledby="media-res">
+            <p id="media-res" class="visually-hidden">Посилання на мультимедійні ресурси</p>
+            <ul class="list-nostyled  media__list">
+              <li class="media__item">
+                <a href="#" class="btn  media__link">
+                  <span>Галерея</span>
+                </a>
+              </li>
+              <li class="media__item  active">
+                <a href="#" class="btn  media__link">
+                  <span>Відео</span>
+                </a>
+              </li>
+              <li class="media__item">
+                <a href="#" class="btn  media__link">
+                  <span>Нагороди</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="row  card-wrapper">
+
+            <div class="col-inner-1-2-3">
+              @@include('blocks/video-card/video-card.html', {
+                "placeholder": "video-placeholder-1"
+              })
+            </div>
+
+            <div class="col-inner-1-2-3">
+              @@include('blocks/video-card/video-card.html', {
+                "placeholder": "video-placeholder-2"
+              })
+            </div>
+
+            <div class="col-inner-1-2-3">
+              @@include('blocks/video-card/video-card.html', {
+                "placeholder": "video-placeholder-3"
+              })
+            </div>
+
+            <div class="col-inner-1-2-3">
+              @@include('blocks/video-card/video-card.html', {
+                "placeholder": "video-placeholder-1"
+              })
+            </div>
+
+            <div class="col-inner-1-2-3">
+              @@include('blocks/video-card/video-card.html', {
+                "placeholder": "video-placeholder-2"
+              })
+            </div>
+
+            <div class="col-inner-1-2-3">
+              @@include('blocks/video-card/video-card.html', {
+                "placeholder": "video-placeholder-3"
+              })
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/search-on/search-on.html')
+
+  @@include('blocks/to-top/to-top.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
