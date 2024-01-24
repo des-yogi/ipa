@@ -87,6 +87,7 @@
 
       #{$block-name}__link span {
         position: relative;
+        color: $title-color;
 
         &::after {
           display: block;
